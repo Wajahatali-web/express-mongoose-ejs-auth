@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="flex bg-white shadow-lg rounded-lg overflow-hidden w-3/4 max-w-4xl">
+        <!-- Left Side -->
+        <div class="w-1/2 bg-blue-600 text-white p-8 hidden md:flex flex-col justify-center items-center">
+            <img src="/img/sign.png" class="w-3/4 mb-4">
+            <h2 class="text-xl font-semibold">Connect with every application.</h2>
+            <p class="text-center text-sm">Everything you need in an easily customizable dashboard.</p>
+        </div>
+
+        <!-- Right Side -->
+        <div class="w-full md:w-1/2 p-8">
+            <h2 class="text-2xl font-semibold text-center">Create Your Account</h2>
+            <p class="text-center text-gray-500 mb-6">Join American Legal</p>
+            <form action="/signup" id="signForm" method="post">
+                <div class="grid grid-cols-2 gap-4" required>
+                    <input type="text" id="fst-name" name="fstname" placeholder="First name"
+                        class="border rounded-lg p-3 w-full" required>
+                    <input type="text" id="lst-name" name="lstname" placeholder="Last name"
+                        class="border rounded-lg p-3 w-full" required>
+                </div>
+                <input type="email" placeholder="Email Address" id="email" name="email"
+                    class="border rounded-lg p-3 w-full mt-4" required>
+                <input type="tel" placeholder="Mobile Number" id="tel" name="tel"
+                    class="border rounded-lg p-3 w-full mt-4" required>
+                <input type="password" placeholder="Password" id="password" name="password"
+                    class="border rounded-lg p-3 w-full mt-4" required>
+                <div class="flex items-center mt-4">
+                    <input type="checkbox" id="terms" class="mr-2">
+                    <label for="terms" class="text-sm text-gray-600">I agree to the Terms of Use & Privacy
+                        Policy</label>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 text-white py-3 mt-4 rounded-lg hover:bg-blue-700">Create
+                    Account</button>
+                <p class="text-center text-sm text-gray-600 mt-4">Already have an account?
+                    <a href="/" class="text-blue-600">Log in</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
